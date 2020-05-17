@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server --open"
+    "start": "webpack-dev-server --open --env.NODE_ENV=local --env.production=false --env.any='wenwu'"
   },
   "keywords": [],
   "author": "",
@@ -16,11 +16,14 @@
     "html-webpack-plugin": "^4.3.0",
     "lodash": "^4.17.15",
     "style-loader": "^1.2.1",
-    "webpack": "^4.43.0",
+    "webpack": "^5.0.0-beta.16",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
     "webpack-bundle-analyzer": "^3.7.0"
   }
 }
